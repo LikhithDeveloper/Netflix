@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/img/bg.jpg");
+    background-position: center center;
+    background-size: max(1740px, 92vw);
+    background-repeat: no-repeat;
+    height: 96vh;
+    position: relative;
+}
+.main .box{
+    height: 96vh;
+    width: 100%;
+    opacity: 0.66;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    padding-top: 7px;
+    height: 80px;
+    flex-wrap: wrap;
+}
+/* @media screen and (max-width: 750px) and (min-width: 250px){
+    nav {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        max-width: 90vw;
+        margin: auto;
+        height: 80px;
+        flex-wrap: wrap;
+    }
+    nav img{
+        width: 80px;
+    }
+} */
+
+nav img{
+    color: red;
+    width: 154px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 11px;
+    padding: 30px;
+    text-align: center;
+
+}
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* here i use > this symbol because input  is the first child of the div container in hero so this above styling is applying for them also so to control that i use >*/
+.separation{
+    height: 6px;
+    background-color: rgb(93, 90, 90);
+}
+.btn{
+    font-weight: bold;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(239, 231, 231, 0.373);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 13px 45px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+    border: 0;
+    position: relative;
+    z-index: 10;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.btn-red:hover{
+    background-color: rgb(212, 12, 12);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 0;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.btn-red-sm:hover{
+    background-color: rgb(212, 12, 12);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.main input{
+    padding: 17px 130px 13.5px 17px;  /*top,right ,bottom , left*/
+    font-size: 17px;
+    border-radius: 2px;
+    color: white;
+    border: 1px solid rgba(239, 231, 231, 0.373);
+    background-color: rgba(0, 0, 0, 0.53);
+    position: relative;
+}
+
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    max-width: 77vw;
+    margin: auto;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    align-items: center;
+} 
+
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 38vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 29vw;
+    height: 25vw;
+    left: 59px;
+}
+.first> div :nth-child(1){
+    font-size: 44px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+}
+.first> div :nth-child(2){
+    font-size: 22px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+}
+section.first> div{
+    display: flex;
+    flex-direction: column;
+}
+.separation{
+    height: 6px;
+    background-color: rgb(93, 90, 90);
+}
+
+/* #sec3-video{
+    position: relative;
+    top: -799px;
+    right: 6px;
+    width: 24vw;
+    height: 25vw;
+    left: 181px;
+} */
+
+.aftersection h2{
+    color: white;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+    align-items: center;
+}
+.aftersection div{
+    color: white;
+    background-color: rgb(44, 40, 40);
+    font-family: "Martel Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    max-width: 73vw;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+.aftersection div:hover{
+    background-color: rgb(65, 61, 61);
+    transition: background-color 0.3s ease, transform 0.5s ease;
+}
+.input{
+
+        padding: 17px 130px 13.5px 17px;  /*top,right ,bottom , left*/
+        font-size: 17px;
+        border-radius: 2px;
+        color: white;
+        border: 1px solid rgba(239, 231, 231, 0.373);
+        background-color: rgba(0, 0, 0, 0.53);
+}
+.inp{
+    padding-bottom: 50px;
+}
+.fo-1{
+    color: rgb(173, 168, 168);
+    max-width: 77vw;
+    margin: auto;
+    padding-top: 65px;
+    font-family: "Martel Sans", sans-serif;
+    padding-bottom: 10px;
+}
+
+.fo-1 a{
+    color: rgb(173, 168, 168);
+}
+
+.fo-2{
+    
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+.fo-2 div{
+    width: 18.25vw;
+}
+
+.fo-2 div a{
+    font-family: "Martel Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    color: rgb(173, 168, 168);
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 650;
+}
